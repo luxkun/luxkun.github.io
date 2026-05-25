@@ -1,0 +1,120 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage{pifont}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=18mm]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1)
+			--++ (-0, 1.2)
+			--++ (0.6, 0)
+			--++ (0, -0.6)
+			--++ (0.6, 0)
+			--++ (0, -1);
+			\path[draw,
+			line width = 0.5,
+			rounded corners=0.5]
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5)
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1)
+		-- (1, 1) -- (1, 0.6);
+	}
+}
+
+\firstname{Luciano}
+\familyname{Ferraro}
+\email{luciano.ferraro@gmail.com}
+\homepage{luxkun.github.io}
+\social[linkedin][www.linkedin.com/in/luciano-ferraro-9046997a/]{luciano-ferraro}
+\social[github]{luxkun}
+\title{Senior AI Gameplay Engineer}
+
+\begin{document}
+\maketitle
+
+\section{Experiences}
+\cventry{2022-Current}{Senior AI Gameplay Engineer}{Epic Games}{Fortnite Battle Royale, Lego Fortnite Odyssey, Lego Fortnite Brick Life}{}{C++, Unreal Engine 5}
+\cvitem{}{{
+\begin{itemize}
+	\item[\textbullet] \textbf{Lego Fortnite Odyssey} (\href{https://store.epicgames.com/p/fortnite--lego}{Epic}\,\ExternalLink{} - \href{https://www.lego.com/en-gb/themes/fortnite/odyssey}{LEGO}\,\ExternalLink) Sole AI engineer for most of the project timeline through prototype and shipping; established the AI architecture. Navmesh, spawning, NPCs, villages, animal taming and friendship system, and many other AI and social systems.
+	\item[\textbullet] \textbf{Lego Fortnite Brick Life} (\href{https://store.epicgames.com/p/fortnite--lego-brick-life}{Epic}\,\ExternalLink{} - \href{https://www.lego.com/en-gb/themes/fortnite/brick-life}{LEGO}\,\ExternalLink) Sole AI engineer through prototype and shipping; owned the AI architecture end-to-end. Navmesh, spawning, job and citizen NPCs, pushed SmartObjects further for this game mode, NPC and Player request system.
+	\item[\textbullet] \textbf{Sidekicks} (\href{https://www.fortnite.com/news/introducing-fortnite-sidekicks}{Epic}\,\ExternalLink) Authored the prototype of this lightweight, multi-product companion system, later shipped across the Fortnite product line.
+	\item[\textbullet] Built the \textbf{GenAI/LLM stack for NPCs} in a shipped Fortnite product line: dynamic conversation generation with structured options, moderation, contextual memory, caching, near-zero-delay interactions, runtime TTS voice. Drives in-game minigames, internal monologue, NPC emotions, and SmartObject interactions.
+	\item[\textbullet] Daily development with \textbf{AI coding agents} across major model families and harnesses (Claude Code, Codex, OpenCode). Authored \textbf{Unreal Engine MCP} toolsets exposing UE assets to agents; engineered deferred tool loading (~200x context-cost reduction); shipped custom Claude skills widely used internally.
+	\item[\textbullet] Ownership of most of the \textbf{SmartObject} / WorldCondition / \textbf{StateTree} stack at Fortnite level. Implemented player usage from scratch and integration with Fortnite AIs; used across the Fortnite ecosystem (Battle Royale, Lego Fortnite, etc.).
+\end{itemize}
+}}
+
+\cventry{2020-2022}{AI Gameplay Engineer}{Epic Games}{Fortnite Battle Royale}{}{C++, Unreal Engine 4}
+\cvitem{}{{
+\begin{itemize}
+	\item[\textbullet] \textbf{Flying AI (UFO)} (\href{https://youtu.be/r23yNRNymZ4?t=143}{YouTube}\,\ExternalLink) First flying AI in Fortnite Battle Royale; custom lightweight 3D navigation system from scratch, full driving/fighting/kidnapping behaviour, custom Octree-based object tracking now reused across Fortnite.
+	\item[\textbullet] \textbf{Klombo} (\href{https://youtu.be/Fpn_ivXdvz4}{YouTube}\,\ExternalLink) First big AI players could walk on in Fortnite Battle Royale; lightweight bespoke navmesh with UE4 changes for on-demand geometry, custom collision handling now reused by other AIs and gameplay features.
+	\item[\textbullet] Owned \textbf{Navmesh in Fortnite}: time-sliced and spatial-based optimizations, dynamic streaming support, shipped a second navmesh at negligible perfmem cost, and daily QA reporting tools that automatically caught most ongoing navmesh issues.
+	\item[\textbullet] Built server and client \textbf{AI LOD systems}, custom dynamic AI mesh/anim customization with budget-optimizer, took server AI count from tens to ~150 concurrent.
+\end{itemize}
+}}
+
+\cventry{2019-2020}{UI Programmer}{Epic Games}{Fortnite Battle Royale}{}{C++, Unreal Engine 4}
+\cvitem{}{{
+\begin{itemize}
+	\item[\textbullet] Shipped the ingame matchmaking system, the Feats/Achievements system, and the ingame/frontend map widget. Worked on multiple BattlePasses and the MOTD UI.
+\end{itemize}
+}}
+
+\cventry{2019}{Generalist Programmer}{Epic Games}{Fortnite Battle Royale}{}{C++, Unreal Engine 4}
+\cvitem{}{{
+\begin{itemize}
+	\item[\textbullet] Replay system work including a custom "Hero's Path"-style camera mode. Contributed to the split-screen initiative.
+\end{itemize}
+}}
+
+\cventry{2017-2019}{AI Game Programmer}{Build a Rocket Boy}{Everywhere Game}{}{C++, Lua, Lumberyard/Open 3D Engine}
+\cvitem{}{\href{https://www.buildarocketboy.com/}{\nolinkurl{buildarocketboy.com}}\,\ExternalLink{} - \href{https://everywhere.game/}{\nolinkurl{everywhere.game}}\,\ExternalLink}
+\cvitem{}{{
+\begin{itemize}
+	\item[\textbullet] Main AI Engineer on a 3rd person shooter, openworld multiplayer game. Built AI driving and walking on a Road Network (roads, sidewalks, traffic lights, crossings) with Navigation, Spawning and Behaviour systems on top.
+	\item[\textbullet] AI Reaction System; SmartObjects usage by AIs; cover generation system (also used by players); multiple combat AI types with complex tactical behaviours.
+\end{itemize}
+}}
+
+\cventry{2017-2017}{AI Game Programmer}{LVGameDev LLC}{Consulting}{C\#, Unity}{}
+\cvitem{}{Integrated ReGoap in their Unity game: SimAirport.}
+
+\cventry{2013-2018}{Full-stack developer}{Ferraro Technology SRLS}{}{}{}
+\cvitem{}{Owner of a small web development company.}
+
+\cventry{2010-2013}{Full-stack developer}{}{Freelance}{}{}
+\cvitem{}{Multiple small websites as a contractor.}
+
+\section{Skills}
+\cvitem{GenAI / LLM}{\textbf{Conversation generation, structured options, moderation, contextual memory}, near-zero-delay LLM-driven interactions, TTS, emotion/feeling deltas. Local Llama and direct LLM API experimentation.}
+\cvitem{Agentic Development}{\textbf{Claude Code, Codex, OpenCode harnesses; MCP server plugins, custom Claude skills}. Claude (Opus/Sonnet/Haiku), GPT/Codex and other model families. Deferred tool loading.}
+\cvitem{AI Behaviours}{\textbf{Behavior Trees, StateTrees, GOAP, SmartObjects, WorldConditions}, FSM, behavior injection. Author of ReGoap.}
+\cvitem{AI Navigation}{\textbf{Navmesh, custom 3D navigation, navlinks}, custom graph navigation, dynamic invokers, road-network navigation.}
+\cvitem{AI Performance}{\textbf{Server and client AI LOD, dynamic AI relevancy}, perfmem reporting, evaluator and tick budgeting.}
+\cvitem{Gameplay}{\textbf{Animation, Conversation, Persistence, Replication / Push Model}, Physics integration.}
+\cvitem{Game Engines}{\textbf{Unreal Engine 5}, Unity3D, Godot, Lumberyard / Open 3D Engine.}
+\cvitem{Languages}{\textbf{C++/C, C\#, Python}; Java, JavaScript.}
+\cvitem{Consoles}{\textbf{PS4, PS5, Xbox One/Series, Switch}.}
+\cvitem{Networking}{\textbf{UE5, Push Model Networking}, custom protocols.}
+\cvitem{Backend / Web}{\textbf{PostgreSQL, MySQL, MongoDB, Redis}; Django, Flask; Nginx, Apache.}
+\cvitem{Spoken Language}{\textbf{Italian (native), English (full professional proficiency)}.}
+
+\section{F/OSS}
+\cventry{Author}{ReGoap}{}{}{}{}
+\cvitem{}{GitHub: \href{https://github.com/luxkun/ReGoap}{\nolinkurl{github.com/luxkun/ReGoap}}\,\ExternalLink}
+\cvitem{}{Engine-agnostic C\# GOAP library with Unity and Godot adapters. 1.1k+ stars and 150+ forks on GitHub.}
+
+\section{Education}
+\cventry{}{Bachelor's degree in Computer Science}{University of ``La Sapienza''}{}{}{}
+\cventry{}{Certificate of Attendance}{Game developing school ``AIV''}{}{}{}
+
+\end{document}

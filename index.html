@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luciano Ferraro - Senior AI Gameplay Engineer</title>
+<meta name="description" content="Luciano Ferraro - Senior AI Gameplay Engineer at Epic Games. Fortnite, Lego Fortnite. GenAI/LLM for NPCs, agentic dev tooling. Author of ReGoap.">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script>
+  /* Pre-paint theme apply (prevents flash of wrong theme). */
+  (function() {
+    try {
+      var pref = localStorage.getItem('theme');
+      var resolved = (pref === 'light' || pref === 'dark')
+        ? pref
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', resolved);
+    } catch (e) {}
+  })();
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark">L<span class="brand-dot">.</span>F<span class="brand-dot">.</span></span>
+      <span class="brand-name">Luciano Ferraro</span>
+    </a>
+    <nav class="primary-nav">
+      <a href="#work"><span class="num">I.</span> Work</a>
+      <a href="#skills"><span class="num">II.</span> Skills</a>
+      <a href="#open-source"><span class="num">III.</span> Open Source</a>
+      <a href="#contact"><span class="num">V.</span> Contact</a>
+    </nav>
+    <div class="theme-switcher" role="group" aria-label="Theme">
+      <button type="button" data-theme-set="auto" title="Follow system theme">Auto</button>
+      <button type="button" data-theme-set="light" title="Force light theme">Light</button>
+      <button type="button" data-theme-set="dark" title="Force dark theme">Dark</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow"><span class="dash"></span>Senior AI Gameplay Engineer <span class="hero-loc">Edinburgh, UK</span></p>
+
+      <h1 class="hero-name">
+        <span class="first">Luciano</span>
+        <span class="last">Ferraro</span>
+      </h1>
+
+      <div class="hero-grid">
+        <p class="hero-lede">
+          I build AI for games at <em>Epic</em>. Senior AI Gameplay Engineer
+          on Fortnite Battle Royale, Lego Fortnite Odyssey, and Lego Fortnite
+          Brick Life. I work across the <em>whole AI tech stack</em>, from
+          behaviors and navigation to performance and tools, and on the
+          gameplay features it ships. Current focus: GenAI/LLM-driven NPCs
+          and agentic developer tooling around Unreal Engine.
+        </p>
+
+        <dl class="hero-meta">
+          <dt>Email</dt>
+          <dd><a href="mailto:luciano.ferraro@gmail.com">luciano.ferraro@gmail.com</a></dd>
+          <dt>GitHub</dt>
+          <dd><a class="ext" href="https://github.com/luxkun">luxkun</a></dd>
+          <dt>LinkedIn</dt>
+          <dd><a class="ext" href="https://www.linkedin.com/in/luciano-ferraro-9046997a/">luciano-ferraro</a></dd>
+          <dt>CV</dt>
+          <dd><a class="dl" href="CV.pdf">Download PDF</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section section-alt">
+    <div class="container">
+
+      <header class="section-head">
+        <span class="section-num">I.</span>
+        <h2>Work</h2>
+        <span class="section-rule"></span>
+      </header>
+
+      <article class="role">
+        <div class="role-side">
+          <p class="role-period">2022<br>Current</p>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">Senior AI Gameplay Engineer</h3>
+          <p class="role-meta">
+            <span class="emp">Epic Games</span>
+            <span class="sep"></span>
+            <a class="meta-link ext" href="https://store.epicgames.com/p/fortnite">Fortnite</a>,
+            <a class="meta-link ext" href="https://store.epicgames.com/p/fortnite--lego">Lego Fortnite Odyssey</a>,
+            <a class="meta-link ext" href="https://store.epicgames.com/p/fortnite--lego-brick-life">Lego Fortnite Brick Life</a>
+            <span class="sep"></span>
+            <span class="stack">C++ . Unreal Engine 5</span>
+          </p>
+
+          <ul class="bullets">
+            <li>
+              <strong>Lego Fortnite Odyssey</strong>
+              <span class="prod-links">
+                <a class="chip ext" href="https://store.epicgames.com/p/fortnite--lego">Epic</a>
+                <a class="chip ext" href="https://www.lego.com/en-gb/themes/fortnite/odyssey">LEGO</a>
+              </span>
+              Sole AI engineer for most of the project timeline through prototype and shipping; established the AI architecture. Navmesh, spawning, NPCs, villages, animal taming and friendship system, and many other AI and social systems.
+            </li>
+            <li>
+              <strong>Lego Fortnite Brick Life</strong>
+              <span class="prod-links">
+                <a class="chip ext" href="https://store.epicgames.com/p/fortnite--lego-brick-life">Epic</a>
+                <a class="chip ext" href="https://www.lego.com/en-gb/themes/fortnite/brick-life">LEGO</a>
+              </span>
+              Sole AI engineer through prototype and shipping; owned the AI architecture end-to-end. Navmesh, spawning, job and citizen NPCs, pushed SmartObjects further for this game mode, NPC and Player request system.
+            </li>
+            <li>
+              <strong>Sidekicks</strong>
+              <span class="prod-links">
+                <a class="chip ext" href="https://www.fortnite.com/news/introducing-fortnite-sidekicks">Epic</a>
+              </span>
+              Authored the prototype of this lightweight, multi-product companion system, later shipped across the Fortnite product line.
+            </li>
+            <li>
+              Built the <strong>GenAI/LLM stack for NPCs</strong> in a shipped Fortnite product line: dynamic conversation generation with structured options, moderation, contextual memory, caching, near-zero-delay interactions, runtime TTS voice. Drives in-game minigames, internal monologue, NPC emotions, and SmartObject interactions.
+            </li>
+            <li>
+              Daily development with <strong>AI coding agents</strong> across major model families and harnesses (Claude Code, Codex, OpenCode). Authored <strong>Unreal Engine MCP</strong> toolsets exposing UE assets to agents; engineered deferred tool loading (~200x context-cost reduction); shipped custom Claude skills widely used internally.
+            </li>
+            <li>
+              Ownership of most of the <strong>SmartObject</strong> / WorldCondition / <strong>StateTree</strong> stack at Fortnite level. Implemented player usage from scratch and integration with Fortnite AIs; used across the Fortnite ecosystem.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div class="role-side">
+          <p class="role-period">2020<br>2022</p>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">AI Gameplay Engineer</h3>
+          <p class="role-meta">
+            <span class="emp">Epic Games</span>
+            <span class="sep"></span>
+            <a class="meta-link ext" href="https://store.epicgames.com/p/fortnite">Fortnite Battle Royale</a>
+            <span class="sep"></span>
+            <span class="stack">C++ . Unreal Engine 4</span>
+          </p>
+          <ul class="bullets">
+            <li>
+              <strong>Flying AI (UFO)</strong>
+              <span class="prod-links">
+                <a class="chip ext" href="https://youtu.be/r23yNRNymZ4?t=143">YouTube</a>
+              </span>
+              First flying AI in Fortnite Battle Royale; custom lightweight 3D navigation from scratch, full driving/fighting/kidnapping behaviour, custom Octree-based object tracking now reused across Fortnite.
+            </li>
+            <li>
+              <strong>Klombo</strong>
+              <span class="prod-links">
+                <a class="chip ext" href="https://youtu.be/Fpn_ivXdvz4">YouTube</a>
+              </span>
+              First big AI players could walk on in Fortnite Battle Royale; lightweight bespoke navmesh with UE4 changes for on-demand geometry, custom collision handling now reused by other AIs and gameplay features.
+            </li>
+            <li>Owned <strong>Navmesh in Fortnite</strong>: time-sliced and spatial-based optimizations, dynamic streaming support, shipped a second navmesh at negligible perfmem cost, and daily QA reporting tools that automatically caught most ongoing navmesh issues.</li>
+            <li>Built server and client <strong>AI LOD systems</strong>, custom dynamic AI mesh/anim customization with budget-optimizer, took server AI count from tens to ~150 concurrent.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role compact">
+        <div class="role-side">
+          <p class="role-period">2019<br>2020</p>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">UI Programmer</h3>
+          <p class="role-meta">
+            <span class="emp">Epic Games</span>
+            <span class="sep"></span>
+            <a class="meta-link ext" href="https://store.epicgames.com/p/fortnite">Fortnite Battle Royale</a>
+            <span class="sep"></span>
+            <span class="stack">C++ . Unreal Engine 4</span>
+          </p>
+          <ul class="bullets">
+            <li>Shipped the ingame matchmaking system, the Feats/Achievements system, and the ingame/frontend map widget. Worked on multiple BattlePasses and the MOTD UI.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role compact">
+        <div class="role-side">
+          <p class="role-period">2019</p>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">Generalist Programmer</h3>
+          <p class="role-meta">
+            <span class="emp">Epic Games</span>
+            <span class="sep"></span>
+            <a class="meta-link ext" href="https://store.epicgames.com/p/fortnite">Fortnite Battle Royale</a>
+            <span class="sep"></span>
+            <span class="stack">C++ . Unreal Engine 4</span>
+          </p>
+          <ul class="bullets">
+            <li>Replay system work including a custom Hero's Path-style camera mode. Contributed to the split-screen initiative.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role compact">
+        <div class="role-side">
+          <p class="role-period">2017<br>2019</p>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">AI Game Programmer</h3>
+          <p class="role-meta">
+            <span class="emp">Build a Rocket Boy</span>
+            <span class="sep"></span>
+            <a class="meta-link ext" href="https://everywhere.game/">Everywhere</a>
+            <span class="sep"></span>
+            <span class="stack">C++ . Lua . Lumberyard</span>
+          </p>
+          <ul class="bullets">
+            <li>Main AI Engineer on a 3rd person shooter, openworld multiplayer game. Built AI driving and walking on a Road Network (roads, sidewalks, traffic lights, crossings) with Navigation, Spawning and Behaviour systems on top.</li>
+            <li>AI Reaction System; SmartObjects usage by AIs; cover generation system (also used by players); multiple combat AI types with complex tactical behaviours.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role compact">
+        <div class="role-side">
+          <p class="role-period">2010<br>2017</p>
+        </div>
+        <div class="role-body">
+          <h3 class="role-title">Earlier</h3>
+          <p class="role-meta">
+            <span class="emp">Various</span>
+            <span class="sep"></span>
+            <span class="stack">C# . Unity . Python . PHP . Full-stack web</span>
+          </p>
+          <ul class="bullets">
+            <li>AI consulting at LVGameDev LLC (2017): integrated ReGoap into SimAirport (Unity, C#).</li>
+            <li>Owner of Ferraro Technology SRLS (2013-2018), a small web development company.</li>
+            <li>Freelance full-stack developer (2010-2013): multiple small websites as a contractor.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+
+      <header class="section-head">
+        <span class="section-num">II.</span>
+        <h2>Skills</h2>
+        <span class="section-rule"></span>
+      </header>
+
+      <dl class="skills">
+        <dt>GenAI / LLM</dt>
+        <dd><strong>Conversation generation, structured options, moderation, contextual memory</strong>, near-zero-delay LLM-driven interactions, TTS, emotion/feeling deltas. Local Llama and direct LLM API experimentation.</dd>
+
+        <dt>Agentic Development</dt>
+        <dd><strong>Claude Code, Codex, OpenCode harnesses; MCP server plugins, custom Claude skills</strong>. Claude (Opus/Sonnet/Haiku), GPT/Codex and other model families. Deferred tool loading.</dd>
+
+        <dt>AI Behaviours</dt>
+        <dd><strong>Behavior Trees, StateTrees, GOAP, SmartObjects, WorldConditions</strong>, FSM, behavior injection. Author of ReGoap.</dd>
+
+        <dt>AI Navigation</dt>
+        <dd><strong>Navmesh, custom 3D navigation, navlinks</strong>, custom graph navigation, dynamic invokers, road-network navigation.</dd>
+
+        <dt>AI Performance</dt>
+        <dd><strong>Server and client AI LOD, dynamic AI relevancy</strong>, perfmem reporting, evaluator and tick budgeting.</dd>
+
+        <dt>Gameplay</dt>
+        <dd><strong>Animation, Conversation, Persistence, Replication / Push Model</strong>, Physics integration.</dd>
+
+        <dt>Game Engines</dt>
+        <dd><strong>Unreal Engine 5</strong>, Unity3D, Godot, Lumberyard / Open 3D Engine.</dd>
+
+        <dt>Languages</dt>
+        <dd><strong>C++/C, C#, Python</strong>; Java, JavaScript.</dd>
+
+        <dt>Consoles</dt>
+        <dd><strong>PS4, PS5, Xbox One/Series, Switch</strong>.</dd>
+
+        <dt>Networking</dt>
+        <dd><strong>UE5, Push Model Networking</strong>, custom protocols.</dd>
+
+        <dt>Backend / Web</dt>
+        <dd><strong>PostgreSQL, MySQL, MongoDB, Redis</strong>; Django, Flask; Nginx, Apache.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="open-source" class="section section-alt">
+    <div class="container">
+
+      <header class="section-head">
+        <span class="section-num">III.</span>
+        <h2>Open Source</h2>
+        <span class="section-rule"></span>
+      </header>
+
+      <article class="project">
+        <div class="project-side">
+          <p class="project-period">2016<br>Today</p>
+          <p class="project-stats">
+            <span class="stat"><span class="n">1.1k</span><span class="l">stars</span></span>
+            <span class="stat"><span class="n">150+</span><span class="l">forks</span></span>
+          </p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title"><a class="ext" href="https://github.com/luxkun/ReGoap">ReGoap</a></h3>
+          <p class="project-meta"><span class="stack">C# . Unity . Godot</span></p>
+          <p class="project-desc">
+            Engine-agnostic <strong>Goal-Oriented Action Planning</strong> library with Unity and Godot adapters. A reusable planner core, runtime abstractions for agent / action / goal / memory / sensor, and engine adapters. Used in indie games and available on the Unity Asset Store.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+
+      <header class="section-head">
+        <span class="section-num">IV.</span>
+        <h2>Education</h2>
+        <span class="section-rule"></span>
+      </header>
+
+      <ul class="education">
+        <li>
+          <p class="edu-degree">Bachelor's degree in Computer Science</p>
+          <p class="edu-school">University of "La Sapienza", Rome</p>
+        </li>
+        <li>
+          <p class="edu-degree">Certificate of Attendance</p>
+          <p class="edu-school">Game developing school "AIV", Rome</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+
+      <header class="section-head">
+        <span class="section-num">V.</span>
+        <h2>Contact</h2>
+        <span class="section-rule"></span>
+      </header>
+
+      <div class="contact-grid">
+        <p class="contact-lede">
+          Best reached by email or LinkedIn. Open-source work and side
+          projects are on GitHub.
+        </p>
+        <dl class="contact-list">
+          <dt>Email</dt>
+          <dd><a href="mailto:luciano.ferraro@gmail.com">luciano.ferraro@gmail.com</a></dd>
+          <dt>LinkedIn</dt>
+          <dd><a class="ext" href="https://www.linkedin.com/in/luciano-ferraro-9046997a/">linkedin.com/in/luciano-ferraro</a></dd>
+          <dt>GitHub</dt>
+          <dd><a class="ext" href="https://github.com/luxkun">github.com/luxkun</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-line"><span class="footer-mark">L.F.</span> <span class="footer-loc">Edinburgh, UK</span> <span class="footer-year">MMXXVI</span></p>
+  </div>
+</footer>
+
+<script>
+  /* Theme switcher: cycles between auto / light / dark, persists choice. */
+  (function() {
+    var KEY = 'theme';
+    var buttons = document.querySelectorAll('[data-theme-set]');
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function getPref() {
+      var stored = localStorage.getItem(KEY);
+      return (stored === 'light' || stored === 'dark') ? stored : 'auto';
+    }
+    function resolve(pref) {
+      if (pref === 'light' || pref === 'dark') return pref;
+      return mq.matches ? 'dark' : 'light';
+    }
+    function apply(pref) {
+      var resolved = resolve(pref);
+      document.documentElement.setAttribute('data-theme', resolved);
+      buttons.forEach(function(b) {
+        b.setAttribute('aria-pressed', b.dataset.themeSet === pref ? 'true' : 'false');
+      });
+      if (pref === 'auto') {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+      } else {
+        try { localStorage.setItem(KEY, pref); } catch (e) {}
+      }
+    }
+
+    apply(getPref());
+
+    buttons.forEach(function(b) {
+      b.addEventListener('click', function() { apply(b.dataset.themeSet); });
+    });
+
+    if (mq.addEventListener) {
+      mq.addEventListener('change', function() {
+        if (getPref() === 'auto') apply('auto');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

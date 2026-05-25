@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <circle cx="16" cy="16" r="14.5" fill="#ffffff" stroke="#3873b3" stroke-width="1"/>
+  <text x="16" y="16"
+        text-anchor="middle"
+        dominant-baseline="central"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="14"
+        font-weight="800"
+        letter-spacing="-0.5"
+        fill="#3873b3">LF</text>
+</svg>
